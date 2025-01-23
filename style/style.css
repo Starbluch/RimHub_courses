@@ -49,6 +49,7 @@ p, a {
 .main {
   display: grid;
   grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr;
   gap: 10px;
   width: 100%;
   max-width: 1200px;
@@ -64,6 +65,15 @@ p, a {
     gap: 5px;
   }
 }
+.main__navigation .item__active {
+  color: rgba(75, 36, 0, 0.6117647059);
+}
+.main__navigation .main__navigation__item {
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
 .main__paragraf {
   margin: 25px 0 50px 0;
   width: 100%;
@@ -80,7 +90,7 @@ p, a {
 }
 .main__title__item_1 {
   grid-column: 1/-1;
-  margin: 150px 0 30px 110px;
+  margin: 50px 0 30px 110px;
   opacity: 0;
 }
 .main__title__item_1 .main__title__h1__item_1 {
@@ -107,7 +117,7 @@ p, a {
   grid-row: 1/-1;
   position: absolute;
   margin-left: 110px;
-  top: 154px;
+  top: 94px;
 }
 .main__title__line__item_1 .main__title__h1__line__item_1 {
   position: relative;
