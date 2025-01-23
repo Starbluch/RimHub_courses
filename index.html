@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="script/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="script/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style.scss">
+    <title>Главная</title>
+</head>
+<body>
+    <div class="container">
+        <main class="main"> 
+
+            <div class="main__title__item_1">
+                <h1 class="main__title__h1__item_1">
+                    Наші курси
+                </h1>
+                <div class="main__paragraf">
+                    <p class="p">Dr. NATALYA FAZYLOVA, эксперт в нишевых услугах эстетической медицины с 15+ лет опыта, основатель Rebalance Beauty and Wellness Center</p>
+                </div>
+            </div>
+            <div class="main__title__line__item_1">
+                <h1 class="main__title__h1__line__item_1">
+                    Наші курси
+                    <hr class="main__title__hr__line__item_1">
+                </h1>
+                <div class="main__paragraf">
+                    <p class="p">Dr. NATALYA FAZYLOVA, эксперт в нишевых услугах эстетической медицины с 15+ лет опыта, основатель Rebalance Beauty and Wellness Center</p>
+                </div>
+            </div>
+
+            <section class="filter-section">
+                <form id="filterForm" action="/search" method="GET">
+              
+                  <!-- Сортировка -->
+                    <div class="filter-group">
+                        <label class="filter__group__title" for="sort">Сортування</label>
+                            <select id="sort" name="sort">
+                            <option class="filter__group__text" value="price-asc">За зростанням вартості</option>
+                            <option class="filter__group__text" value="price-desc">За спаданням вартості</option>
+                            <option class="filter__group__text" value="newest">Нові надходження</option>
+                            <option class="filter__group__text" value="oldest">Старі надходження</option>
+                        </select>
+                    </div>
+              
+                  <!-- Поле для поиска -->
+                    <div class=" filter__curs">
+                        <label class="filter__group__title" for="course-name">Назва курсу</label>
+                        <div class="filter__curs__item">
+                            <input type="text" id="course-name" name="course-name">
+                            <img src="assets/Icons/icon-12.png" alt="">
+                        </div>
+                    </div>
+              
+                    <hr class="hr">
+              
+                  <!-- Рубрики -->
+                    <div class="filter-group ">
+                        <label class="filter-group__rubrik filter__group__title">Рубрики</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="category" value="investment" checked> Інвестування</label>
+                            <label><input type="checkbox" name="category" value="economics"> Економіка професії. Як бути успішним</label>
+                            <label><input type="checkbox" name="category" value="residential-property"> Житлова нерухомість</label>
+                            <label><input type="checkbox" name="category" value="land"> Земля</label>
+                            <label><input type="checkbox" name="category" value="commercial-property"> Комерційна нерухомість</label>
+                            <label><input type="checkbox" name="category" value="communication"> Комунікація</label>
+                            <label><input type="checkbox" name="category" value="marketing"> Маркетинг</label>
+                            <label><input type="checkbox" name="category" value="novice-materials"> Матеріали для новачків</label>
+                            <label><input type="checkbox" name="category" value="new-buildings"> Новобудови</label>
+                            <label><input type="checkbox" name="category" value="rental-property"> Оренда нерухомості</label>
+                            <label><input type="checkbox" name="category" value="psychology"> Психологія</label>
+                            <label><input type="checkbox" name="category" value="buyer-work"> Робота з покупцем</label>
+                            <label><input type="checkbox" name="category" value="seller-work"> Робота з продавцем</label>
+                            <label><input type="checkbox" name="category" value="technology"> Технології</label>
+                            <label><input type="checkbox" name="category" value="agency-management"> Управління агенцією нерухомості</label>
+                            <label><input type="checkbox" name="category" value="legal-issues"> Юридичні питання</label>
+                        </div>
+                    </div>
+                  <!-- Диапазон цен -->
+                  <div class="filter-group">
+                    <label for="price-range" class="filter__group__title">Діапазон цін (грн)</label>
+                    <div class="price-range">
+                        <input type="number" name="price-min" placeholder="Від" min="0">
+                        <input type="number" name="price-max" placeholder="До" min="0">
+                    </div>
+                  </div>
+
+                  <button type="submit" class="search-button">ПОШУК</button>
+                </form>
+              </section>
+
+            <section class="curses-container">
+                        <div class="curses__cards">
+                            <div class="cards-item">
+                                <div class="item__image">
+                                    <img src="assets/image/img-2.png" alt="cards" class="img">
+                                </div>
+                                <p class="item__title">
+                                    Житлова нерухомість
+                                </p>
+                                <p class="item__subtitle">
+                                    Інвестування
+                                </p>
+
+                                <div class="item__star">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img"> 
+                                </div>
+
+                                <div class="item__bottom">
+                                    <div class="item__button">
+                                        <img src="assets/Icons/icon-1.svg" alt="" class="img">
+                                        <a href="#" class="item__btn">
+                                            додати у кошик
+                                        </a>
+                                    </div>
+                                    <p class="item__price">
+                                        ₴ 500 <br> за місяць
+                                    </p>
+                                </div>
+                                
+                            </div>
+                            <div class="cards-item">
+                                <div class="item__image">
+                                    <img src="assets/image/img-3.png" alt="cards" class="img">
+                                </div>
+                                <p class="item__title">
+                                    Житлова нерухомість
+                                </p>
+                                <p class="item__subtitle">
+                                    Інвестування
+                                </p>
+
+                                <div class="item__star">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img"> 
+                                </div>
+
+                                <div class="item__bottom">
+                                    <div class="item__button">
+                                        <img src="assets/Icons/icon-1.svg" alt="" class="img">
+                                        <a href="#" class="item__btn">
+                                            додати у кошик
+                                        </a>
+                                    </div>
+                                    <p class="item__price">
+                                        ₴ 500 <br> за місяць
+                                    </p>
+                                </div>
+                                
+                            </div>
+                            <div class="cards-item">
+                                <div class="item__image">
+                                    <img src="assets/image/img-4.png" alt="cards" class="img">
+                                </div>
+                                <p class="item__title">
+                                    Житлова нерухомість
+                                </p>
+                                <p class="item__subtitle">
+                                    Інвестування
+                                </p>
+
+                                <div class="item__star">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img"> 
+                                </div>
+
+                                <div class="item__bottom">
+                                    <div class="item__button">
+                                        <img src="assets/Icons/icon-1.svg" alt="" class="img">
+                                        <a href="#" class="item__btn">
+                                            додати у кошик
+                                        </a>
+                                    </div>
+                                    <p class="item__price">
+                                        ₴ 500 <br> за місяць
+                                    </p>
+                                </div>
+                                
+                            </div>
+                            <div class="cards-item">
+                                <div class="item__image">
+                                    <img src="assets/image/img-2.png" alt="cards" class="img">
+                                </div>
+                                <p class="item__title">
+                                    Житлова нерухомість
+                                </p>
+                                <p class="item__subtitle">
+                                    Інвестування
+                                </p>
+
+                                <div class="item__star">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img"> 
+                                </div>
+
+                                <div class="item__bottom">
+                                    <div class="item__button">
+                                        <img src="assets/Icons/icon-1.svg" alt="" class="img">
+                                        <a href="#" class="item__btn">
+                                            додати у кошик
+                                        </a>
+                                    </div>
+                                    <p class="item__price">
+                                        ₴ 500 <br> за місяць
+                                    </p>
+                                </div>
+                                
+                            </div>
+                            <div class="cards-item">
+                                <div class="item__image">
+                                    <img src="assets/image/img-2.png" alt="cards" class="img">
+                                </div>
+                                <p class="item__title">
+                                    Житлова нерухомість
+                                </p>
+                                <p class="item__subtitle">
+                                    Інвестування
+                                </p>
+
+                                <div class="item__star">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img"> 
+                                </div>
+
+                                <div class="item__bottom">
+                                    <div class="item__button">
+                                        <img src="assets/Icons/icon-1.svg" alt="" class="img">
+                                        <a href="#" class="item__btn">
+                                            додати у кошик
+                                        </a>
+                                    </div>
+                                    <p class="item__price">
+                                        ₴ 500 <br> за місяць
+                                    </p>
+                                </div>
+                                
+                            </div>
+                            <div class="cards-item">
+                                <div class="item__image">
+                                    <img src="assets/image/img-3.png" alt="cards" class="img">
+                                </div>
+                                <p class="item__title">
+                                    Житлова нерухомість
+                                </p>
+                                <p class="item__subtitle">
+                                    Інвестування
+                                </p>
+
+                                <div class="item__star">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img"> 
+                                </div>
+
+                                <div class="item__bottom">
+                                    <div class="item__button">
+                                        <img src="assets/Icons/icon-1.svg" alt="" class="img">
+                                        <a href="#" class="item__btn">
+                                            додати у кошик
+                                        </a>
+                                    </div>
+                                    <p class="item__price">
+                                        ₴ 500 <br> за місяць
+                                    </p>
+                                </div>
+                                
+                            </div>
+                            <div class="cards-item">
+                                <div class="item__image">
+                                    <img src="assets/image/img-4.png" alt="cards" class="img">
+                                </div>
+                                <p class="item__title">
+                                    Житлова нерухомість
+                                </p>
+                                <p class="item__subtitle">
+                                    Інвестування
+                                </p>
+
+                                <div class="item__star">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img"> 
+                                </div>
+
+                                <div class="item__bottom">
+                                    <div class="item__button">
+                                        <img src="assets/Icons/icon-1.svg" alt="" class="img">
+                                        <a href="#" class="item__btn">
+                                            додати у кошик
+                                        </a>
+                                    </div>
+                                    <p class="item__price">
+                                        ₴ 500 <br> за місяць
+                                    </p>
+                                </div>
+                                
+                            </div>
+                            <div class="cards-item">
+                                <div class="item__image">
+                                    <img src="assets/image/img-2.png" alt="cards" class="img">
+                                </div>
+                                <p class="item__title">
+                                    Житлова нерухомість
+                                </p>
+                                <p class="item__subtitle">
+                                    Інвестування
+                                </p>
+
+                                <div class="item__star">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img"> 
+                                </div>
+
+                                <div class="item__bottom">
+                                    <div class="item__button">
+                                        <img src="assets/Icons/icon-1.svg" alt="" class="img">
+                                        <a href="#" class="item__btn">
+                                            додати у кошик
+                                        </a>
+                                    </div>
+                                    <p class="item__price">
+                                        ₴ 500 <br> за місяць
+                                    </p>
+                                </div>
+                                
+                            </div>
+                            <div class="cards-item">
+                                <div class="item__image">
+                                    <img src="assets/image/img-2.png" alt="cards" class="img">
+                                </div>
+                                <p class="item__title">
+                                    Житлова нерухомість
+                                </p>
+                                <p class="item__subtitle">
+                                    Інвестування
+                                </p>
+
+                                <div class="item__star">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img">
+                                    <img src="assets/Icons/star.svg" alt="star" class="img"> 
+                                </div>
+
+                                <div class="item__bottom">
+                                    <div class="item__button">
+                                        <img src="assets/Icons/icon-1.svg" alt="" class="img">
+                                        <a href="#" class="item__btn">
+                                            додати у кошик
+                                        </a>
+                                    </div>
+                                    <p class="item__price">
+                                        ₴ 500 <br> за місяць
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer__contact">
+                    <h1 class="footer__title">
+                        контакти
+                    </h1>
+                    <div class="contact">
+                        <div class="contact__item-1">
+                            <img src="assets/Icons/icon-5.png" alt="" class="img">
+                            <p class="item__text">
+                                Україна 
+                            </p>
+                            <p class="item__text">
+                                Умань вул. 
+                            </p>
+                            <p class="item__text">
+                                Незалежності, 37
+                            </p>
+                        </div>
+                        <div class="contact__item-2">
+                            <img src="assets/Icons/icon-6.png" alt="" class="img">
+                            <p class="item__text ">
+                                 +38(238) 237-98-73
+                            </p>
+                        </div>
+                        <div class="contact__item-3">
+                            <img src="assets/Icons/icon-7.png" alt="" class="img">
+                            <p class="item__text">
+                                 manager@rimhub.com.ua
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__nav">
+                    <h1 class="footer__title">
+                        навігація
+                    </h1>
+                    <ul class="navbar">
+                        <a href="#" class="nav__item">
+                            <li class="navbar__item">
+                                Про нас
+                            </li>
+                        </a>
+                        <a href="#" class="nav__item">
+                            <li class="navbar__item">
+                                Курси
+                            </li>
+                        </a>
+                        <a href="#" class="nav__item">
+                            <li class="navbar__item">
+                                Контакти
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="footer__social">
+                    <div class="social__content">
+                        <h1 class="footer__title footer__title__soc">
+                            залишайтесь на зв'язку
+                        </h1>
+                        <div class="social__image">
+                            <a href="#" class="image__item">
+                                <img src="assets/Icons/soc_icons-1.png" alt="social" class="img">
+                            </a>
+                            <a href="#" class="image__item">
+                                <img src="assets/Icons/soc_icons-2.png" alt="social" class="img">
+                            </a>
+                            <a href="#" class="image__item">
+                                <img src="assets/Icons/soc_icons-3.png" alt="social" class="img">
+                            </a>
+                            <a href="#" class="image__item">
+                                <img src="assets/Icons/soc_icons-4.png" alt="social" class="img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="logo">
+                        <img src="assets/image/logo.png" alt="logo" class="img">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script/slick/slick.min.js"></script>
+</body>
+</html>
