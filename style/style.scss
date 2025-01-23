@@ -78,11 +78,20 @@ p,a {
 .main__navigation {
     .item__active {
         color: #4B24009C;
+        
     }
     .main__navigation__item {
         font-size: 18px;
         font-family: 'Montserrat';
         font-weight: 400;
+        a {
+            text-decoration: none;    
+            transition: none;     
+          }
+        a:hover, a:focus, a:active {
+            text-decoration: none;  
+            color: inherit;         
+        }
     }
 }
 

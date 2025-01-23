@@ -73,6 +73,14 @@ p, a {
   font-family: "Montserrat";
   font-weight: 400;
 }
+.main__navigation .main__navigation__item a {
+  text-decoration: none;
+  transition: none;
+}
+.main__navigation .main__navigation__item a:hover, .main__navigation .main__navigation__item a:focus, .main__navigation .main__navigation__item a:active {
+  text-decoration: none;
+  color: inherit;
+}
 
 .main__paragraf {
   margin: 25px 0 50px 0;
