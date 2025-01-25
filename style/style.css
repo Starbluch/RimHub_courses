@@ -305,51 +305,6 @@ input[type=checkbox] {
     padding: 0 2px;
   }
 }
-.curses {
-  width: 100%;
-  height: auto;
-}
-.curses .curses__btn {
-  width: 195px;
-  height: 45px;
-  margin: 26px auto 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ffffff;
-  z-index: 3;
-  transition: linear 0.3s;
-}
-.curses .curses__btn .curses__btn__button {
-  text-decoration: none;
-  color: #000000;
-}
-.curses .curses__btn .btn__button__btn {
-  margin-top: 10px;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.curses .curses__btn:hover {
-  background-color: #d26500;
-}
-
-.curses__title {
-  max-width: 1200px;
-  padding: 0 30px;
-  width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.curses__title__h1 {
-  max-width: 1050px;
-  width: 100%;
-  font-size: 32px;
-  font-weight: 700;
-  margin: 36px auto;
-}
-
 .curses__cards {
   width: 100%;
   height: auto;
