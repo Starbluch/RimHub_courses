@@ -81,6 +81,11 @@ p, a {
   text-decoration: none;
   color: inherit;
 }
+@media (max-width: 450px) {
+  .main__navigation .main__navigation__item {
+    font-size: 14px;
+  }
+}
 
 .main__paragraf {
   margin: 25px 0 50px 0;
@@ -339,14 +344,6 @@ input[type=checkbox] {
   font-weight: 300;
   color: #a8a8a8;
 }
-.curses__cards .cards-item .item__star {
-  margin: 10px 0 10px 20px;
-  display: flex;
-}
-.curses__cards .cards-item .item__star .img {
-  width: 22px;
-  height: 22px;
-}
 .curses__cards .cards-item .item__bottom {
   display: flex;
   margin-bottom: 20px;
@@ -380,12 +377,12 @@ input[type=checkbox] {
 }
 .curses__cards .cards-item .item__bottom .item__price {
   margin-left: 10px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
 }
 @media (max-width: 768px) {
   .curses__cards .cards-item .item__bottom .item__price {
-    font-size: 14px;
+    font-size: 12px;
   }
   .curses__cards .cards-item .item__bottom .item__button {
     width: 130px;
@@ -466,6 +463,70 @@ input[type=checkbox] {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   }
 }
+.raaating {
+  width: 100%;
+  height: 20px;
+}
+
+.rating-group {
+  position: relative;
+  display: flex; /* Это выстроит элементы в ряд */
+}
+
+.half-stars input {
+  position: absolute;
+  left: -9999px;
+}
+
+.half-stars label {
+  margin: 0;
+  cursor: pointer;
+  display: inline-block; /* Сохраняем наложение, выстраивая в ряд */
+}
+
+.half-stars label svg {
+  height: 20px;
+  width: 20px;
+  fill: #37C300;
+  transition: fill 0.3s;
+}
+
+.half-stars {
+  margin: 5px 0px 14px 25px;
+}
+
+.rating-group {
+  display: inline-block;
+  position: relative;
+}
+.rating-group .hsr {
+  position: absolute;
+  width: 11px;
+  overflow: hidden;
+  padding-right: 0;
+  z-index: 100;
+}
+.rating-group .hsr:nth-child(2) {
+  left: 0px;
+}
+.rating-group .hsr:nth-child(3) {
+  left: 40px;
+}
+.rating-group .hsr:nth-child(4) {
+  left: 60px;
+}
+.rating-group .hsr:nth-child(5) {
+  left: 80px;
+}
+
+.half-stars input:checked ~ label svg {
+  fill: #ffffff;
+}
+
+.half-stars .rating-group input:checked ~ label svg path {
+  stroke: rgb(0, 0, 0);
+}
+
 .footer {
   padding: 40px;
   width: 100%;
