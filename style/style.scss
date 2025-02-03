@@ -263,15 +263,18 @@ p,a {
         }
     }
 }
-
-.main__paragraf {
-    margin: 25px 0 50px 0;
-    width: 100%;
-    .p {
-        width: 100%;
-        grid-column: 1/1;
+@media (max-width: 768px) {
+    .main__navigation {
+        margin: 90px 0 0 5px;
     }
 }
+
+@media (max-width: 450px) {
+    .main__navigation__item {
+        font-size: 12px;
+    }
+}
+
 @media (max-width: 450px) {
     .main__paragraf {
         .p {
@@ -296,7 +299,7 @@ p,a {
 }
 @media (max-width: 450px) {
     .main__title__item_1 {
-        margin: 40px 0 20px 0px;
+        margin: 20px 0 20px 0px;
         .main__title__h1__item_1 {
             font-size: 26px;
             font-weight: 700;
